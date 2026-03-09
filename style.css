@@ -1,0 +1,115 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+
+.header{
+  height:100vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+   url(imgi_12_header.jpg) ;
+  background-size:cover;
+  background-position:center;
+}
+
+
+.navbar{
+  width:85%;
+  margin:auto;
+  margin-top:20px;
+}
+
+.logo{
+  float:left;
+  color:#ff305b;
+  font-size:26px;
+  font-weight:bold;
+}
+
+.menu{
+  float:right;
+  list-style:none;
+}
+
+.menu li{
+  float:left;
+  margin-left:25px;
+  position:relative;
+}
+
+.menu li a{
+  color:white;
+  text-decoration:none;
+  font-size:16px;
+  transition:0.4s;
+}
+
+.menu li a:hover{
+  color:#ff305b;
+}
+
+
+.menu li::after{
+  content:"";
+  width:0;
+  height:2px;
+  background:#ff305b;
+  position:absolute;
+  left:0;
+  bottom:-5px;
+  transition:0.4s;
+}
+
+.menu li:hover::after{
+  width:100%;
+}
+
+.menu li:first-child a{
+  color:#ff305b;
+}
+
+.clear{
+  clear:both;
+}
+
+
+.text{
+  width:50%;
+  margin:220px auto;
+  text-align:center;
+  overflow:hidden; 
+}
+
+.text p{
+  color:white;
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.text h1{
+  color:#ff305b;
+  font-size:65px;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+
+.typing{
+  color:white;
+  font-size:22px;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+.cursor{
+  color:white;
+  font-size:22px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+  0%,50%,100%{opacity:1;}
+  25%,75%{opacity:0;}
+}
